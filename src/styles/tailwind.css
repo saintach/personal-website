@@ -1,0 +1,22 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import './prism.css';
+@import 'tailwindcss/utilities';
+
+@layer components {
+  .body-text {
+    @apply mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400;
+  }
+
+  .form-label {
+    @apply block text-sm font-semibold text-zinc-800 dark:text-zinc-400;
+  }
+
+  .photo {
+    @apply rounded-xl bg-zinc-100 object-cover dark:bg-zinc-800;
+  }
+
+  .gallery-photo {
+    @apply h-auto max-w-full rounded-lg shadow-md hover:shadow-xl;
+  }
+}
